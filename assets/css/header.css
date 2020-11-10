@@ -1,0 +1,138 @@
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6233, #f7462e);
+}
+.header_navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.header_navbar-list {
+  padding-left: 0;
+}
+.header_navbar-item {
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+}
+.header_navbar-list li,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.35rem;
+  color: var(--white-color);
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.header_navbar-link:hover {
+  color: rgb(255, 255, 255,0.7);
+  cursor: pointer;
+}
+.header_navbar-item--separate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 12px;
+  border-right: 2px solid #fb9086;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_navbar-icon-link{
+  padding-left: 5px;
+  font-size: 120%;
+}
+.header_navbar-link i{
+  font-size: 120%;
+  padding-right: 5px;
+}
+.header_img-qr-code{
+  width: 180px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  top: 118%;
+  border-radius: 2px;
+  padding: 5px;
+  display: none;
+  animation: fadeIn ease-in 0.3s;
+}
+.has-qr-code:hover .header_img-qr-code{
+  display: block;
+}
+.has-qr-code ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  top: -16px;
+}
+.img-qr-code{
+  width: 180px;
+}
+.img-gg-play{
+  height: 16px;
+}
+
+.header-img-qr-code-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.qr-link :nth-child(1){
+  margin-right: 7px;
+}
+.qr-link :nth-child(2){ 
+  margin-right: 8px;
+}
+.header_notify{
+  position: absolute;
+  top: 118%;
+  right: 0;
+  width: 404px;
+  background-color: var(--white-color);
+  border: 1px solid #D3D3D3;
+}
+.header_notify-head{
+  height: 40px;
+  background-color: var(--white-color);
+}
+.header_notify-head h3{
+  color: #999;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 40px;
+  padding-left: 8px;  
+}
+
+.header_notify-list{
+padding-left: 12px;
+padding-top: 5px;
+background-color: rgba(228, 220, 220, 0.74);
+}
+.header_notify-item{
+  display: flex;
+}
+.header_notify-link{
+  display: flex;
+  text-decoration: none;
+
+}
+.header_notify-img{
+  width: 50px;
+  object-fit: contain;
+}
+.header_notify-info {
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.header_notify-name{
+  display: block;
+  color: var(--black-color);
+  font-weight: 400;
+}
+.header_notify-sortdes{
+  display: block;
+  color: #756F6E;
+}
